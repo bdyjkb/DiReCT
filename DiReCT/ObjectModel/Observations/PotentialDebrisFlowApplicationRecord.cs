@@ -36,7 +36,7 @@ using System.Collections.Generic;
 
 namespace DiReCT.ObjectModel
 {
-    class PotentialDebrisFlowApplicationRecord
+    class PotentialDebrisFlowApplicationRecord : ObservationRecord
     {
         /// <summary>
         /// 溪流編號 (第一次回報免填寫)
@@ -71,7 +71,7 @@ namespace DiReCT.ObjectModel
         /// <summary>
         /// 歷史災害發生原因
         /// </summary>
-        public List<string> HistoricalReacons { get; set; }
+        public List<string> HistoricalReasons { get; set; }
 
         /// <summary>
         /// 土石流發生時間
