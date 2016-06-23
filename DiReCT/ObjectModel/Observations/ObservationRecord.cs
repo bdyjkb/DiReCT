@@ -80,6 +80,11 @@ namespace DiReCT.ObjectModel
         /// <summary>
         /// 
         /// </summary>
+        public string EventUID { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Dictionary<string, string> VideoFilePaths { get; set; }
 
         /// <summary>

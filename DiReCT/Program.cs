@@ -63,30 +63,30 @@ namespace DiReCT
             timer.Reset();
             timer.Start();
             // Create a Dictionary for 5000000 ObservationRecords
-            Dictionary<string, ObservationRecord> ORDictionary = new Dictionary<string, ObservationRecord>();
-            {
-                for (int index = 0; index < 50; index++)
-                {
-                    CasualtiesRecord casualties = new CasualtiesRecord();
+            //Dictionary<string, ObservationRecord> ORDictionary = new Dictionary<string, ObservationRecord>();
+            //{
+            //    for (int index = 0; index < 50; index++)
+            //    {
+            //        CasualtiesRecord casualties = new CasualtiesRecord();
 
-                    casualties.UID = eventInfo.Type
-                        + "-" + eventInfo.Name
-                        //+ "-" + DateTime.Now.ToString("yyyyMMddHHmmss")
-                        + "-" + index;
-                    casualties.TimeStamp = DateTime.UtcNow;
-                    casualties.LocationStamp = new GeoCoordinate();
+            //        casualties.UID = eventInfo.Type
+            //            + "-" + eventInfo.Name
+            //            //+ "-" + DateTime.Now.ToString("yyyyMMddHHmmss")
+            //            + "-" + index;
+            //        casualties.TimeStamp = DateTime.UtcNow;
+            //        casualties.LocationStamp = new GeoCoordinate();
 
-                    casualties.DeathToll = index;
-                    casualties.Injuries = index;
-                    casualties.MissingPeople = index;
+            //        casualties.DeathToll = index;
+            //        casualties.Injuries = index;
+            //        casualties.MissingPeople = index;
 
-                    // Add a record to ORDicionary
-                    ORDictionary.Add(casualties.UID, casualties);
+            //        // Add a record to ORDicionary
+            //        ORDictionary.Add(casualties.UID, casualties);
 
-                    // Add a reference to some recorder
-                    RIDictionary["0"].ObservationList.Add(casualties.UID, casualties);
-                }
-            }
+            //        // Add a reference to some recorder
+            //        RIDictionary["0"].ObservationList.Add(casualties.UID, casualties);
+            //    }
+            //}
             Console.WriteLine("Spending Time of creating a ORDictionary: {0} ticks ({1} msec)", timer.ElapsedTicks, timer.ElapsedMilliseconds);
             Console.WriteLine("Using Memory: {0}MB", Environment.WorkingSet / 1000000);
 

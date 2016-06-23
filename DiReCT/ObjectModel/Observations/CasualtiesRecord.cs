@@ -33,7 +33,7 @@
 
 namespace DiReCT.ObjectModel
 {
-    public class CasualtiesRecord : ObservationRecord
+    public class CasualtiesRecord
     {
         /// <summary>
         /// This Auto-property is for accessing number of death toll.
