@@ -35,13 +35,13 @@
     <Reference Include="System.Device" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ObjectModel\FloodInvestigationRecord.cs" />
     <Compile Include="ObjectModel\MetaData\DeviceInfo.cs" />
     <Compile Include="ObjectModel\IQualityControl.cs" />
     <Compile Include="ObjectModel\MetaData\EventInfo.cs" />
     <Compile Include="ObjectModel\MetaData\RecorderInfo.cs" />
     <Compile Include="ObjectModel\Observations\CasualtiesRecord.cs" />
     <Compile Include="ObjectModel\Observations\DebrisFlowInvestigationRecord.cs" />
+    <Compile Include="ObjectModel\Observations\FloodInvestigationRecord.cs" />
     <Compile Include="ObjectModel\Observations\PotentialDebrisFlowApplicationRecord.cs" />
     <Compile Include="ObjectModel\Observations\ProtectedTargetRecord.cs" />
     <Compile Include="Program.cs" />
@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
