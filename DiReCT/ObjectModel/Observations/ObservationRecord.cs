@@ -33,7 +33,6 @@ using System;
 using System.Collections.Generic;
 using System.Device.Location;
 
-
 namespace DiReCT.ObjectModel
 {
 
@@ -68,35 +67,40 @@ namespace DiReCT.ObjectModel
         public List<string> Reasons { get; set; } = new List<string>();
 
         /// <summary>
-        /// 
+        /// This Auto-property is for accessing value of record description.
         /// </summary>
         public string Description { get; set; }
 
         /// <summary>
-        /// 
+        /// This Auto-property is for accessing value of recorder UID.
         /// </summary>
         public string RecorderUID { get; set; }
 
         /// <summary>
-        /// 
+        /// This Auto-property is for accessing value of event UID.
         /// </summary>
         public string EventUID { get; set; }
 
         /// <summary>
-        /// 
+        /// The struct structure contains video, audio and photo paths.
         /// </summary>
-        public Dictionary<string, string> VideoFilePaths { get; set; }
+        public struct Multimedia
+        {
+            /// <summary>
+            /// This dictionary stores videos' file of paths.
+            /// </summary>
+            public Dictionary<string, string> VideoFilePaths { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        public Dictionary<string, string> AudioFilePaths { get; set; }
+            /// <summary>
+            /// This dictionary stores the audios' file of paths.
+            /// </summary>
+            public Dictionary<string, string> AudioFilePaths { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        public Dictionary<string, string> PhotoFilePaths { get; set; }
-
+            /// <summary>
+            /// This dictionary stores the photos' file of paths.
+            /// </summary>
+            public Dictionary<string, string> PhotoFilePaths { get; set; }
+        }
     }
 }
 

@@ -43,6 +43,7 @@ namespace DiReCT.ObjectModel
         /// </summary>
         public string UID { get; set; }
 
+
         /// <summary>
         /// This Auto-property is for accessing value of event name.
         /// </summary>
