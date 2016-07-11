@@ -14,8 +14,8 @@
  *      ObservationRecord is an abstract class which contains basic members 
  *      for data captured by time stamped, location stamped, etc. 
  *
- * 		This class can not be instantiated and can be inherited by others subclasses. 
- *
+ * 		This class can not be instantiated and can be inherited 
+ *      by others subclasses. 
  *
  * Authors:
  * 
@@ -39,45 +39,35 @@ namespace DiReCT.ObjectModel
     public abstract class ObservationRecord
     {
         /// <summary>
-        /// This property is for accessing value of UID.
-        /// The UID is a identifier of the ObservationRecord.
+        /// The UID is the unique identifier of the ObservationRecord.
         /// </summary>
         public string UID { get; set; }
 
         /// <summary>
-        /// This Auto-property is for accessing value of timestamp.
-        /// The time stamp means the date of filing a record.
+        /// The time stamp means the time instant at which the record
+        /// is captured.
         /// </summary>
         public DateTime TimeStamp { get; set; } = new DateTime();
 
         /// <summary>
-        /// This Auto-property is for accessing value of location stamp.
+        /// Location stamp is the location at which the record is 
+        /// captured.
         /// </summary>
-        public virtual GeoCoordinate LocationStamp { get; set; } = new GeoCoordinate();
+        public virtual GeoCoordinate LocationStamp { get; set; } 
+               = new GeoCoordinate();
 
         /// <summary>
-        /// This Auto-property is for accessing value of outlier.
-        /// Default value is false.
+        /// Default outlier value = 0.
         /// </summary>
-        public Boolean Outlier { get; set; } = false;
+        public int Outlier { get; set; } = 0;
 
         /// <summary>
-        /// This Auto-property is for accessing value of possible damage reason.
+        /// NotesonRecord can keep notes or others information.
         /// </summary>
-        public List<string> Reasons { get; set; } = new List<string>();
-
+        public List<string> NotesonRecord { get; set; } = new List<string>();
+        
         /// <summary>
-        /// This Auto-property is for accessing value of record description.
-        /// </summary>
-        public string Description { get; set; }
-
-        /// <summary>
-        /// This Auto-property is for accessing value of recorder UID.
-        /// </summary>
-        public string RecorderUID { get; set; }
-
-        /// <summary>
-        /// This Auto-property is for accessing value of event UID.
+        /// The EventUID is the unique identifier of the event. 
         /// </summary>
         public string EventUID { get; set; }
 

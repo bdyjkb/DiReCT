@@ -31,12 +31,12 @@ namespace DiReCT.ObjectModel
     public class DeviceInfo
     {
         /// <summary>
-        /// This Auto-property is for accessing value of device model number.
+        /// This is for accessing value of device model number.
         /// </summary>
         public string DeviceModelNumber { get; set; }
 
         /// <summary>
-        /// This Auto-property is for accessing value of device IMEI.
+        /// This is for accessing value of device IMEI.
         /// </summary>
         public string DeviceIMEI { get; set; }
     }

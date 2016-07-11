@@ -38,32 +38,31 @@ namespace DiReCT.ObjectModel
     {
 
         /// <summary>
-        /// This property is for accessing value of UID.
-        /// The UID is a identifier of the EventInfo.
+        /// The UID is the unique identifier of the EventInfo.
         /// </summary>
         public string UID { get; set; }
 
 
         /// <summary>
-        /// This Auto-property is for accessing value of recorder name.
+        /// This is for accessing value of recorder name.
         /// </summary>
         public string Name { get; set; }
 
 
         /// <summary>
-        /// This Auto-property is for accessing value of recorder organization.
+        /// This is for accessing value of recorder organization.
         /// </summary>
         public string Organization { get; set; }
 
 
         /// <summary>
-        /// This Auto-property is for accessing value of recorder phone number.
+        /// This is for accessing value of recorder phone number.
         /// </summary>
         public string PhoneNumber { get; set; }
 
 
         /// <summary>
-        /// This Auto-property is for accessing value of recorder e-mail.
+        /// This is for accessing value of recorder e-mail.
         /// </summary>
         public string Email { get; set; }
 

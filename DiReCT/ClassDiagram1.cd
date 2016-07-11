@@ -3,7 +3,7 @@
   <Class Name="DiReCT.ObjectModel.FormsGenerator" Collapsed="true">
     <Position X="9.75" Y="7.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>EAAAGAAAhIAAEAEQEADgAAAAQAAAIAAAAABCgAAAAAQ=</HashCode>
       <FileName>ObjectModel\FormsGenerator.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -41,7 +41,7 @@
       </Struct>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAACBAAAgAAAABAACAQAAAAAAAAAAAAAAAAAEEAA=</HashCode>
+      <HashCode>IAAAAACBAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAEEAA=</HashCode>
       <FileName>ObjectModel\Observations\ObservationRecord.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -58,39 +58,54 @@
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
     <NestedTypes>
-      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.VegetationType" Collapsed="true">
+      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.LocationPotentialFactor" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>ObjectModel\Observations\DebrisFlowRecord.cs</NewMemberFileName>
         </TypeIdentifier>
       </Enum>
-      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.ScaleCollapse" Collapsed="true">
+      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.WatershedLandslideScale" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>ObjectModel\Observations\DebrisFlowRecord.cs</NewMemberFileName>
         </TypeIdentifier>
       </Enum>
-      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.RivuletDamageType" Collapsed="true">
+      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.WatershedLandslideRate" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>ObjectModel\Observations\DebrisFlowRecord.cs</NewMemberFileName>
         </TypeIdentifier>
       </Enum>
-      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.PossibleReasons" Collapsed="true">
+      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.MainVegetationGrowthSituation" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>ObjectModel\Observations\DebrisFlowRecord.cs</NewMemberFileName>
         </TypeIdentifier>
       </Enum>
-      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.RegulationProjectEvaluationTypes" Collapsed="true">
+      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.AggradationRockDiameter" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>ObjectModel\Observations\DebrisFlowRecord.cs</NewMemberFileName>
         </TypeIdentifier>
       </Enum>
-      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.DangerousSettlementSuggestionTypes">
+      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.OccurRegionUpstreamSlope" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ObjectModel\Observations\DebrisFlowRecord.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.MainVegetationCategory" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ObjectModel\Observations\DebrisFlowRecord.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.TorrentDisasterType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ObjectModel\Observations\DebrisFlowRecord.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.RiskPotentialLevel" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>ObjectModel\Observations\DebrisFlowRecord.cs</NewMemberFileName>
         </TypeIdentifier>
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>UAAAGAAAhIQEEAkQEADgAAAASAAAIAACACBHgASAAAQ=</HashCode>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
       <FileName>ObjectModel\Observations\DebrisFlowRecord.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -105,19 +120,9 @@
           <NewMemberFileName>ObjectModel\Observations\FloodRecord.cs</NewMemberFileName>
         </TypeIdentifier>
       </Struct>
-      <Enum Name="DiReCT.ObjectModel.Observations.FloodRecord.RegulationProjectEvaluationTypes" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>ObjectModel\Observations\FloodRecord.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-      <Enum Name="DiReCT.ObjectModel.Observations.FloodRecord.DangerousSettlementSuggestionTypes">
-        <TypeIdentifier>
-          <NewMemberFileName>ObjectModel\Observations\FloodRecord.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>UBACGAYAhIAAEAEQwADAAAAEQAAAaAAAAABAgAAAAAQ=</HashCode>
+      <HashCode>QBACAAYAAAAAAAAAwAAAAAAEAAAASAAAAAAAAAAAAAA=</HashCode>
       <FileName>ObjectModel\Observations\FloodRecord.cs</FileName>
     </TypeIdentifier>
   </Class>

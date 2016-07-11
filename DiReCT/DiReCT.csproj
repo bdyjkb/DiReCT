@@ -35,6 +35,7 @@
     <Reference Include="System.Device" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ObjectModel\BackgroundInfo.cs" />
     <Compile Include="ObjectModel\FormsGenerator.cs" />
     <Compile Include="ObjectModel\MetaData\DeviceInfo.cs" />
     <Compile Include="ObjectModel\IQualityControl.cs" />
