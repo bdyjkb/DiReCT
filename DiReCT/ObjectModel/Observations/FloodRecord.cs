@@ -36,30 +36,30 @@ namespace DiReCT.ObjectModel.Observations
 {
     class FloodRecord : ObservationRecord
     {
-        /// <summary>
-        /// 查詢及回覆對象
-        /// </summary>
-        public DateTime ReplyTime { get; set; }
 
-        /// <summary>
-        /// 查詢及回覆對象
-        /// </summary>
-        public string ReplierOrganization { get; set; }
-
-        /// <summary>
-        /// 查詢及回覆對象
-        /// </summary>
-        public string ReplierName { get; set; }
-
-        // <summary>
-        /// 淹水發生地點
-        /// </summary>
-        public string FloodAddress { get; set; }
 
         /// <summary>
         /// 淹水發生時間
+        /// The time stamp means the time instant at which the flood
+        /// occured.
         /// </summary>
-        public DateTime FloodOccurTime { get; set; }
+        public DateTime FloodTimeStamp { get; set; } = new DateTime();
+
+
+
+        /// <summary>
+        /// This Auto-property is for accessing value of flood occur area.
+        /// </summary>
+        public List<GeoCoordinate> FloodOccurArea { get; set; }
+
+
+        /// <summary>
+        /// 淹水發生地點
+        /// Flood location stamp is the location at which the flood 
+        /// occured.
+        /// </summary>
+        public virtual GeoCoordinate FloodLocationStamp { get; set; }
+               = new GeoCoordinate();
 
         /// <summary>
         /// 淹水事件情形
@@ -84,26 +84,21 @@ namespace DiReCT.ObjectModel.Observations
 
         /// <summary>
         /// 是否影響人車通行
-        public bool IsThereAnyCarOrPeopleAffected { get; set; }
-
+        public enum IsThereAnyCarOrPeopleAffected
+        {
+            Yes,
+            No,
+            IDontKnow
+        }
         /// <summary>
         /// 是否影響住宅
         /// </summary>
-        public bool IsThereAnyHouseAffected { get; set; }
+        public enum IsThereAnyHouseAffected
+        {
+            Yes,
+            NO,
+            IDontKnow
+        }
 
-        /// <summary>
-        /// This Auto-property is for accessing value of flood occur area.
-        /// </summary>
-        public List<GeoCoordinate> FloodOccurArea { get; set; }
-
-        /// <summary>
-        /// This method can get the real-time rainfall from CWB.
-        /// </summary>
-        public double GetRealTimeRainfall() { return 0; }
-
-        /// <summary>
-        /// This method can get the rain pH value from CWB.
-        /// </summary>
-        public double GetRainpHValue { get; set; }
     }
 }
