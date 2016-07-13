@@ -1,2 +1,102 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DiReCT.ObjectModel.BackgroundInfo" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAQAAAEAAAAAAAAAAAAAAAIAACAEAAAAAAA=</HashCode>
+      <FileName>ObjectModel\BackgroundInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiReCT.ObjectModel.FormsGenerator" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectModel\FormsGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiReCT.ObjectModel.DeviceInfo" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectModel\MetaData\DeviceInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiReCT.ObjectModel.EventInfo" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAQAAAAAAAAAAQAAAAAAGAA=</HashCode>
+      <FileName>ObjectModel\MetaData\EventInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiReCT.ObjectModel.RecorderInfo" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECAACAAAAAAAQAQAAAAAAAAAAAAAAAAAMAA=</HashCode>
+      <FileName>ObjectModel\MetaData\RecorderInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiReCT.ObjectModel.ObservationRecord" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAACBAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAEEAA=</HashCode>
+      <FileName>ObjectModel\Observations\ObservationRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiReCT.ObjectModel.RecordHandler" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RecordHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectModel\Observations\DebrisFlowRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiReCT.ObjectModel.Observations.FloodRecord" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>ObjectModel\Observations\FloodRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiReCT.MainClass" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiReCT.StandardOperatingProcedures.DebrisFlowSOP" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SOP\DebrisFlowSOP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiReCT.StandardOperatingProcedures.FloodSOP" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SOP\FloodSOP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiReCT.StandardOperatingProcedures.StandardOperatingProcedures" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>SOP\StandardOperatingProcedures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DiReCT.ObjectModel.IQualityControl" Collapsed="true">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>ObjectModel\IQualityControl.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft JhengHei UI" Size="9" />
+</ClassDiagram>

@@ -53,7 +53,7 @@ namespace DiReCT.ObjectModel
         /// Location stamp is the location at which the record is 
         /// captured.
         /// </summary>
-        public virtual GeoCoordinate LocationStamp { get; set; } 
+        public virtual GeoCoordinate LocationStamp { get; set; }
                = new GeoCoordinate();
 
         /// <summary>
@@ -65,7 +65,7 @@ namespace DiReCT.ObjectModel
         /// NotesonRecord can keep notes or others information.
         /// </summary>
         public List<string> NotesonRecord { get; set; } = new List<string>();
-        
+
         /// <summary>
         /// The EventUID is the unique identifier of the event. 
         /// </summary>
