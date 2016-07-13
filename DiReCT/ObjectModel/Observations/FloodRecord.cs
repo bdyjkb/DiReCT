@@ -38,27 +38,6 @@ namespace DiReCT.ObjectModel.Observations
     {
 
         /// <summary>
-        /// 紀錄者是否知道水災發生時間
-        /// Does the recorder know whether the time of flood occured
-        /// or not?
-        /// </summary>
-        public enum DoYouKnowTheTimeOfTheFlood
-        {
-            Yes,
-            No,
-            IDontKnow
-        }
-
-
-        /// <summary>
-        /// 水災發生時間 (假如紀錄者知道時間)
-        /// The FloodTimeStamp means the time instant at which the flood
-        /// occured.
-        /// </summary>
-        public DateTime FloodTimeStamp { get; set; } = new DateTime();
-
-
-        /// <summary>
         /// 水災發生地點
         /// The FloodOccurArea is the location at which the flood 
         /// occured.
@@ -74,11 +53,23 @@ namespace DiReCT.ObjectModel.Observations
 
 
         /// <summary>
-        /// 水災是否影響人車通行
-        /// Does the recorder know whether the flood affect cars and 
+        /// 水災是否有影響到人
+        /// Does the recorder know whether the flood affect  
         /// people or not?
         /// </summary>
-        public enum IsThereAnyCarsOrPeopleAffected
+        public enum ArePeopleAffected
+        {
+            Yes,
+            No,
+            IDontKnow
+        }
+
+        /// <summary>
+        /// 水災是否影響汽車通行
+        /// Does the recorder know whether the flood affect 
+        /// cars or not?
+        /// </summary>
+        public enum AreCarsAffected
         {
             Yes,
             No,
@@ -91,7 +82,7 @@ namespace DiReCT.ObjectModel.Observations
         /// Does the recorder know  whether the flood affect any 
         /// houses or not?
         /// </summary>
-        public enum IsThereAnyHousesAffected
+        public enum AreHousesAffected
         {
             Yes,
             NO,
