@@ -37,68 +37,65 @@ namespace DiReCT.ObjectModel.Observations
     class FloodRecord : ObservationRecord
     {
 
-
         /// <summary>
-        /// 淹水發生時間
-        /// The time stamp means the time instant at which the flood
-        /// occured.
+        /// 紀錄者是否知道水災發生時間
+        /// Does the recorder know whether the time of flood occured
+        /// or not?
         /// </summary>
-        public DateTime FloodTimeStamp { get; set; } = new DateTime();
-
-
-
-        /// <summary>
-        /// This Auto-property is for accessing value of flood occur area.
-        /// </summary>
-        public List<GeoCoordinate> FloodOccurArea { get; set; }
-
-
-        /// <summary>
-        /// 淹水發生地點
-        /// Flood location stamp is the location at which the flood 
-        /// occured.
-        /// </summary>
-        public virtual GeoCoordinate FloodLocationStamp { get; set; }
-               = new GeoCoordinate();
-
-        /// <summary>
-        /// 淹水事件情形
-        /// </summary>
-        public struct FloodSituation
-        {
-            /// <summary>
-            /// 淹水情形-長度
-            /// </summary>
-            public int FloodLength { get; set; }
-
-            /// <summary>
-            /// 淹水情形-寬度
-            /// </summary>
-            public int FloodWidth { get; set; }
-
-            /// <summary>
-            /// 淹水情形-深度
-            /// </summary>
-            public int FloodDepth { get; set; }
-        }
-
-        /// <summary>
-        /// 是否影響人車通行
-        public enum IsThereAnyCarOrPeopleAffected
+        public enum DoYouKnowTheTimeOfTheFlood
         {
             Yes,
             No,
             IDontKnow
         }
+
+
         /// <summary>
-        /// 是否影響住宅
+        /// 水災發生時間 (假如紀錄者知道時間)
+        /// The FloodTimeStamp means the time instant at which the flood
+        /// occured.
         /// </summary>
-        public enum IsThereAnyHouseAffected
+        public DateTime FloodTimeStamp { get; set; } = new DateTime();
+
+
+        /// <summary>
+        /// 水災發生地點
+        /// The FloodOccurArea is the location at which the flood 
+        /// occured.
+        /// </summary>
+        public List<GeoCoordinate> FloodOccuredArea { get; set; }
+
+
+        /// <summary>
+        /// 水災深度
+        /// The depth of flood.
+        /// </summary>
+        public int FloodDepth { get; set; }
+
+
+        /// <summary>
+        /// 水災是否影響人車通行
+        /// Does the recorder know whether the flood affect cars and 
+        /// people or not?
+        /// </summary>
+        public enum IsThereAnyCarsOrPeopleAffected
+        {
+            Yes,
+            No,
+            IDontKnow
+        }
+
+
+        /// <summary>
+        /// 水災是否影響住宅
+        /// Does the recorder know  whether the flood affect any 
+        /// houses or not?
+        /// </summary>
+        public enum IsThereAnyHousesAffected
         {
             Yes,
             NO,
             IDontKnow
         }
-
     }
 }
