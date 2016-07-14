@@ -38,10 +38,10 @@ namespace DiReCT.ObjectModel.Observations
     {
         /// <summary>
         /// 集水區面積
-        /// Area of the watershed.
+        /// Area of the catchment.
         /// </summary>
-        public int WatershedArea { get; set; }
-      
+        public int CatchmentArea { get; set; }
+
         /// <summary>
         /// 溪流災害類型
         /// Type of torrent disaster.
@@ -74,9 +74,9 @@ namespace DiReCT.ObjectModel.Observations
 
         /// <summary>
         /// 集水區內崩塌率
-        /// The Landslide rate in watershed.
+        /// The Landslide rate in catchment.
         /// </summary>
-        public enum WatershedLandslideRate
+        public enum CatchmentLandslideRate
         {
             UnderOnePercent,
             OneToFivePercent,
@@ -85,9 +85,9 @@ namespace DiReCT.ObjectModel.Observations
 
         /// <summary>
         /// 集水區內崩塌規模
-        /// Landslide scale in watershed.
+        /// Landslide scale in catchment.
         /// </summary>
-        public enum WatershedLandslideScale
+        public enum CatchmentLandslideScale
         {
             NoObviousLandslide,
             SmallScaleLandslide,
@@ -105,10 +105,10 @@ namespace DiReCT.ObjectModel.Observations
             UnderEightCM,
             NoObviousRock
         }
-        
+
         /// <summary>
         /// 集水區內主要植生生長種類
-        /// The main vegetation category in watershed.
+        /// The main vegetation category in catchment.
         /// </summary>
         public enum MainVegetationCategory
         {
@@ -120,7 +120,7 @@ namespace DiReCT.ObjectModel.Observations
 
         /// <summary>
         /// 集水區內主要植生生長狀況
-        /// The main vegetations grow situation in watershed. 
+        /// The main vegetations grow situation in catchment. 
         /// </summary>
         public enum MainVegetationGrowthSituation
         {
@@ -152,7 +152,6 @@ namespace DiReCT.ObjectModel.Observations
             Medium,
             Low
         }
-
-    }     
- }
+    }
+}
 
