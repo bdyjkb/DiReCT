@@ -3,7 +3,7 @@
   <Class Name="DiReCT.ObjectModel.FormsGenerator" Collapsed="true">
     <Position X="9.75" Y="7.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAGAAAhIAAEAEQEADgAAAAQAAAIAAAAABCgAAAAAQ=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ObjectModel\FormsGenerator.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -63,17 +63,12 @@
           <NewMemberFileName>ObjectModel\Observations\DebrisFlowRecord.cs</NewMemberFileName>
         </TypeIdentifier>
       </Enum>
-      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.WatershedLandslideScale" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>ObjectModel\Observations\DebrisFlowRecord.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.WatershedLandslideRate" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>ObjectModel\Observations\DebrisFlowRecord.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
       <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.MainVegetationGrowthSituation" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ObjectModel\Observations\DebrisFlowRecord.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.CatchmentLandslideScale" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>ObjectModel\Observations\DebrisFlowRecord.cs</NewMemberFileName>
         </TypeIdentifier>
@@ -103,9 +98,14 @@
           <NewMemberFileName>ObjectModel\Observations\DebrisFlowRecord.cs</NewMemberFileName>
         </TypeIdentifier>
       </Enum>
+      <Enum Name="DiReCT.ObjectModel.Observations.DebrisFlowRecord.CatchmentLandslideRate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ObjectModel\Observations\DebrisFlowRecord.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
       <FileName>ObjectModel\Observations\DebrisFlowRecord.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -115,14 +115,24 @@
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
     <NestedTypes>
-      <Struct Name="DiReCT.ObjectModel.Observations.FloodRecord.FloodSituation" Collapsed="true">
+      <Enum Name="DiReCT.ObjectModel.Observations.FloodRecord.ArePeopleAffected" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>ObjectModel\Observations\FloodRecord.cs</NewMemberFileName>
         </TypeIdentifier>
-      </Struct>
+      </Enum>
+      <Enum Name="DiReCT.ObjectModel.Observations.FloodRecord.AreCarsAffected" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ObjectModel\Observations\FloodRecord.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="DiReCT.ObjectModel.Observations.FloodRecord.AreHousesAffected" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ObjectModel\Observations\FloodRecord.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>QBACAAYAAAAAAAAAwAAAAAAEAAAASAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>ObjectModel\Observations\FloodRecord.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -154,10 +164,24 @@
       <FileName>SOP\StandardOperatingProcedures.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="DiReCT.ObjectModel.BackgroundInfo" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAQAAAEAAAAAAAAAAAAAAAIAACAEAAAAAAA=</HashCode>
+      <FileName>ObjectModel\BackgroundInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiReCT.ObjectModel.Observations.ProtectedObject" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAECAAAACAAAAAAAAAAABAgAAAAAA=</HashCode>
+      <FileName>ObjectModel\Observations\ProtectedObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="DiReCT.ObjectModel.IQualityControl" Collapsed="true">
     <Position X="9.75" Y="9.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ObjectModel\IQualityControl.cs</FileName>
     </TypeIdentifier>
   </Interface>

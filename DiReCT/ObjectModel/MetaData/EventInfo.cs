@@ -45,13 +45,13 @@ namespace DiReCT.ObjectModel
 
 
         /// <summary>
-        /// This Auto-property is for accessing value of event name.
+        /// This  is for accessing value of event name.
         /// </summary>
         public string Name { get; set; }
 
 
         /// <summary>
-        /// This Auto-property is for accessing value of event type.
+        /// This is for accessing value of event type.
         /// </summary>
         public string Type { get; set; }
 
