@@ -40,7 +40,7 @@ namespace DiReCT.ObjectModel.Observations
         /// 集水區面積
         /// Area of the watershed.
         /// </summary>
-        public int WatershedArea { get; set; }
+        public int CatchmentArea { get; set; }
       
         /// <summary>
         /// 溪流災害類型
@@ -76,7 +76,7 @@ namespace DiReCT.ObjectModel.Observations
         /// 集水區內崩塌率
         /// The Landslide rate in watershed.
         /// </summary>
-        public enum WatershedLandslideRate
+        public enum CatchmentLandslideRate
         {
             UnderOnePercent,
             OneToFivePercent,
@@ -87,7 +87,7 @@ namespace DiReCT.ObjectModel.Observations
         /// 集水區內崩塌規模
         /// Landslide scale in watershed.
         /// </summary>
-        public enum WatershedLandslideScale
+        public enum CatchmentLandslideScale
         {
             NoObviousLandslide,
             SmallScaleLandslide,
