@@ -36,7 +36,7 @@ namespace DiReCT.ObjectModel
         {
             Yes,
             No,
-            IDontKnow
+            IDoNotKnow
         }
 
         /// <summary>

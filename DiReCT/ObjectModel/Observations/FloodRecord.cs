@@ -61,8 +61,9 @@ namespace DiReCT.ObjectModel.Observations
         {
             Yes,
             No,
-            IDontKnow
+            IDoNotKnow
         }
+
 
         /// <summary>
         /// 水災是否影響汽車通行
@@ -73,7 +74,7 @@ namespace DiReCT.ObjectModel.Observations
         {
             Yes,
             No,
-            IDontKnow
+            IDoNotKnow
         }
 
 
@@ -86,7 +87,7 @@ namespace DiReCT.ObjectModel.Observations
         {
             Yes,
             NO,
-            IDontKnow
+            IDoNotKnow
         }
     }
 }

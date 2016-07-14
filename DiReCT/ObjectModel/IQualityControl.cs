@@ -8,6 +8,6 @@ namespace DiReCT.ObjectModel
 {
     interface IQualityControl
     {
-        void DoSometing();
+        // To-do.
     }
 }

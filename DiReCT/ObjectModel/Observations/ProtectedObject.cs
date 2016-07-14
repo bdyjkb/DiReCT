@@ -129,7 +129,7 @@ namespace DiReCT.ObjectModel.Observations
             {
                 Yes,
                 No,
-                IDontKnow
+                IDoNotKnow
             }
 
             /// <summary>
