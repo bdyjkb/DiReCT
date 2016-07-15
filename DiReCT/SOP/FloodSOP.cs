@@ -41,5 +41,6 @@ namespace DiReCT.StandardOperatingProcedures
     public class FloodSOP : StandardOperatingProcedures
     {
         // To do.
+        // Alert recorder to record water gategory / quality.
     }
 }

@@ -44,13 +44,11 @@ namespace DiReCT.ObjectModel.Observations
         /// </summary>
         public List<GeoCoordinate> FloodOccuredArea { get; set; }
 
-
         /// <summary>
         /// 水災深度
         /// The depth of flood.
         /// </summary>
         public int FloodDepth { get; set; }
-
 
         /// <summary>
         /// 水災是否有影響到人
@@ -64,7 +62,6 @@ namespace DiReCT.ObjectModel.Observations
             IDoNotKnow
         }
 
-
         /// <summary>
         /// 水災是否影響汽車通行
         /// Does the recorder know whether the flood affect 
@@ -77,7 +74,6 @@ namespace DiReCT.ObjectModel.Observations
             IDoNotKnow
         }
 
-
         /// <summary>
         /// 水災是否影響住宅
         /// Does the recorder know  whether the flood affect any 
@@ -89,5 +85,50 @@ namespace DiReCT.ObjectModel.Observations
             NO,
             IDoNotKnow
         }
+
+        /// <summary>
+        /// 受困原因
+        /// Does the recorder know whether the reasons of  
+        /// be trapped or not?
+        /// Reasons of trapped.
+        /// </summary>
+        public enum TrappedReasons
+        {
+            Flooded,
+            BridgeBroken,
+            RoadsBlocked,
+            IDoNotKnow
+        }
+
+        /// <summary>
+        /// 有無災民受困
+        /// Does the recorder know whether people are trapped  
+        /// or not?
+        /// </summary>
+        public enum ArePeolpleTrapped
+        {
+            Yes,
+            NO,
+            IDoNotKnow
+        }
+
+        /// <summary>
+        /// If the recorder knows how many people are trapped.
+        /// (Optional, will show after chooses "Yes")
+        /// </summary>
+        public int NumbersOfTrappedPeople { get; set; }
+
+        /// <summary>
+        /// 受困災民種類
+        /// </summary>
+        public enum TypesOfTrappedPeople
+        {
+            Tourist,
+            Passerby,
+            Pedestrian,
+            Resident,
+            IDoNotKnow
+        }
+
     }
 }
