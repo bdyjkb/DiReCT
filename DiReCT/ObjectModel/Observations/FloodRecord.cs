@@ -46,9 +46,9 @@ namespace DiReCT.ObjectModel.Observations
 
         /// <summary>
         /// 水災深度
-        /// The depth of flood.
+        /// The depth of water.
         /// </summary>
-        public int FloodDepth { get; set; }
+        public int WaterDepth { get; set; }
 
         /// <summary>
         /// 水災是否有影響到人
@@ -63,6 +63,12 @@ namespace DiReCT.ObjectModel.Observations
         }
 
         /// <summary>
+        /// If the recorder knows how many people are affected.
+        /// (Optional, will show after chooses "Yes")
+        /// </summary>
+        public int NumbersOfAffectedPeople { get; set; }
+
+        /// <summary>
         /// 水災是否影響汽車通行
         /// Does the recorder know whether the flood affect 
         /// cars or not?
@@ -75,6 +81,12 @@ namespace DiReCT.ObjectModel.Observations
         }
 
         /// <summary>
+        /// If the recorder knows how many cars are affected.
+        /// (Optional, will show after chooses "Yes")
+        /// </summary>
+        public int NumbersOfAffectedCars { get; set; }
+
+        /// <summary>
         /// 水災是否影響住宅
         /// Does the recorder know  whether the flood affect any 
         /// houses or not?
@@ -85,6 +97,12 @@ namespace DiReCT.ObjectModel.Observations
             NO,
             IDoNotKnow
         }
+
+        /// <summary>
+        /// If the recorder knows how many houses are affected.
+        /// (Optional, will show after chooses "Yes")
+        /// </summary>
+        public int NumbersOfAffectedHouse { get; set; }
 
         /// <summary>
         /// 受困原因
@@ -128,7 +146,6 @@ namespace DiReCT.ObjectModel.Observations
             Pedestrian,
             Resident,
             IDoNotKnow
-        }
-
+        } 
     }
 }
