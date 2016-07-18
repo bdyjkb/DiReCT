@@ -38,14 +38,14 @@ namespace DiReCT.ObjectModel
     public class EventInfo
     {
         /// <summary>
-        /// This property is for accessing value of UID.
+        /// This is for accessing value of UID.
         /// The UID is a identifier of the EventInfo.
         /// </summary>
         public string UID { get; set; }
 
 
         /// <summary>
-        /// This  is for accessing value of event name.
+        /// This is for accessing value of event name.
         /// </summary>
         public string Name { get; set; }
 
