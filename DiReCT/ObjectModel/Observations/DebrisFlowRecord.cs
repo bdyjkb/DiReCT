@@ -36,15 +36,152 @@ namespace DiReCT.ObjectModel.Observations
 {
     class DebrisFlowRecord : ObservationRecord
     {
+
         /// <summary>
-        /// 集水區面積
-        /// Area of the catchment.
+        /// 岩性組合
+        /// Four rock Lithology and combination.
         /// </summary>
-        public int CatchmentArea { get; set; }
+        public struct RockLithology
+        {
+
+            /// <summary>
+            /// 沉積岩
+            /// Types of Sedimetary Rock.
+            /// </summary>
+            enum SedimetaryRock
+            {
+
+                Conglomerate,
+                Sandstone,
+                Siltstone,
+                Shale,
+                Mudstone,
+                Limestone
+            }
+
+            /// <summary>
+            /// 變質岩
+            /// Types of Metamorphic Rock.
+            /// </summary>
+            enum MetamorphicRock
+            {
+                Quartzite,
+                Marble,
+                Amphibolite,
+                Gneiss,
+                GraniticGneiss,
+                Schist,
+                Phyllite,
+                Slate,
+                Hornfels,
+                Greywacke,
+                Argillite
+            }
+
+            /// <summary>
+            /// 火成岩
+            /// Types of Igneous Rock.
+            /// </summary>
+            enum IgneousRock
+            {
+                Peridotite,
+                Gabbro,
+                Diorite,
+                Granite,
+                Granodiorite,
+                Basalt,
+                Andesite,
+                Rhyolite,
+                VolcanicGlass,
+                QuartzVein,
+                Agglomerate,
+                Ignimbrite,
+                Tuff,
+                Lahar
+            }
+
+            /// <summary>
+            /// 堆積物
+            /// Types of Sedoment Rock.
+            /// </summary>
+            enum SedimentRock
+            {
+                GarvelTerrace,
+                Sandstone,
+                ClayLayer,
+                Peat,
+                Agglomerate,
+                Lapilli,
+                VolcanicAsh
+            }
+        }
+
+        /// <summary>
+        /// 集水區相關
+        /// Catchment relative
+        /// </summary>
+        public struct Catchment
+        {
+            /// <summary>
+            /// 集水區面積
+            /// Area of the catchment.
+            /// </summary>
+            public int CatchmentArea { get; set; }
+
+            /// <summary>
+            /// 集水區內崩塌率
+            /// The Landslide rate in catchment.
+            /// </summary>
+            public enum CatchmentLandslideRate
+            {
+                UnderOnePercent,
+                OneToFivePercent,
+                AboveFivePercent
+            }
+
+            /// <summary>
+            /// 集水區內崩塌規模
+            /// Landslide scale in catchment.
+            /// </summary>
+            public enum CatchmentLandslideScale
+            {
+                NoObviousLandslide,
+                SmallScaleLandslide,
+                ObviousBigRegionLandslide
+            }
+
+        }
+
+        /// <summary>
+        /// 坡度相關
+        /// Slope relative.
+        /// </summary>
+        public struct Slope
+        {
+            /// <summary>
+            /// 發生區上游坡度
+            /// The Slope of upstream.
+            /// </summary>
+            public enum OccurRegionUpstreamSlope
+            {
+                AboveFiftyDegrees,
+                ThirtyToFiftyDegrees,
+                UnderThirtyDegrees
+            }
+        }
+
+
+
+        /// <summary>
+        /// 溪流災害類型-其他描述
+        /// Other discriptions of torrent disaster.
+        /// </summary>
+        public string TorrentDisasterTypeDiscription { get; set; }
+
 
         /// <summary>
         /// 溪流災害類型
-        /// Type of torrent disaster.
+        /// Type of the torrent disaster.
         /// </summary>
         public enum TorrentDisasterType
         {
@@ -53,45 +190,6 @@ namespace DiReCT.ObjectModel.Observations
             GullyErosion,
             ShallowSlide,
             Others
-        }
-
-        /// <summary>
-        /// 溪流災害類型-其他描述
-        /// Other discriptions of torrent disaster.
-        /// </summary>
-        public string TorrentDisasterTypeDiscription { get; set; }
-
-        /// <summary>
-        /// 發生區上游坡度
-        /// The Slope of upstream.
-        /// </summary>
-        public enum OccurRegionUpstreamSlope
-        {
-            AboveFiftyDegrees,
-            ThirtyToFiftyDegrees,
-            UnderThirtyDegrees
-        }
-
-        /// <summary>
-        /// 集水區內崩塌率
-        /// The Landslide rate in catchment.
-        /// </summary>
-        public enum CatchmentLandslideRate
-        {
-            UnderOnePercent,
-            OneToFivePercent,
-            AboveFivePercent
-        }
-
-        /// <summary>
-        /// 集水區內崩塌規模
-        /// Landslide scale in catchment.
-        /// </summary>
-        public enum CatchmentLandslideScale
-        {
-            NoObviousLandslide,
-            SmallScaleLandslide,
-            ObviousBigRegionLandslide
         }
 
         /// <summary>
